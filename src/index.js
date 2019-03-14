@@ -8,15 +8,14 @@ import shoppingListItemReducer from "./reducers/shoppingListItemReducer.js";
 import App from "./App";
 import "./index.css";
 
-const store = createStore(shoppingListItemReducer);
+const store = createStore(
+  shoppingListItemReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
-    <Provider store={store}>
-      {" "}
-      /* code change */
+  <Provider store={store}>
       <App />
-    </Provider>
-    /* code change */
-  ,
+  </Provider>,
   document.getElementById("root")
 );
