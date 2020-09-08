@@ -3,6 +3,7 @@ export default function shoppingListItemReducer(
 		items: []
 	},
 	action
+	
 ) {
 	switch (action.type) {
 		case 'INCREASE_COUNT':
