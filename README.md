@@ -1,4 +1,4 @@
-# Intro to Redux: Reading Data from State
+## Intro to Redux: Reading Data from State
 
 ## Objectives
 
