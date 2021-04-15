@@ -6,7 +6,7 @@ class App extends Component {
 	handleOnClick = event => {
 		this.props.increaseCount();
 	};
-
+//
 	render() {
 		return (
 			<div className="App">
