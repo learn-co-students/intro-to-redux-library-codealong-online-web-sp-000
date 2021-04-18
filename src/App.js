@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component {
 	handleOnClick = event => {
+		console.log(this.props)
 		this.props.increaseCount();
 	};
 
