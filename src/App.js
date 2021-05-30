@@ -23,6 +23,8 @@ const mapStateToProps = state => {
 	};
 };
 
+const i_took_notes = " 3 pages actually... this was a big lesson lol"
+
 const mapDispatchToProps = dispatch => {
 	return {
 		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
