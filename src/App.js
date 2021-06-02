@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
-	handleOnClick = event => {
+	handleInc = event => {
 		this.props.increaseCount();
 	};
 
 	render() {
 		return (
 			<div className="App">
-				<button onClick={this.handleOnClick}>Click</button>
+				<button onClick={this.handleInc}>Click</button>
 				<p>{this.props.items.length}</p>
 			</div>
 		);
@@ -25,11 +25,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
+		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' }),
 	};
 };
 
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
